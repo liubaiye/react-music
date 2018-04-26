@@ -7,7 +7,7 @@
 
 ## 效果预览
 <p style="text-align:center;">
-  <img src="http://sunshinejy.cn/github/20180425_092859.gif"/>
+  <video src="http://sunshinejy.cn/github/20180425_093305.mp4" controls="controls"></video>
 </p>
 
 ## 安装
