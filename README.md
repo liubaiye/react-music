@@ -11,7 +11,7 @@
 </p>
 
 ## 安装
-<p>前提条件需在本地安装 api server 参考上面的api地址在本地启用。项目中默认监听的是4000端口，也可在我项目中fetch.js中进行修改配置</p>
+前提条件需在本地安装 api server 参考上面的api地址在本地启用。项目中默认监听的是4000端口，也可在我项目中fetch.js中进行修改配置
 ```shell
 $ git clone git@github.com:liubaiye/react-music.git
 $ npm install
