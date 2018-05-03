@@ -566,6 +566,9 @@ img {
     flex-wrap: wrap;
    
 }
+.contair .recommend .recom-list  li  p {
+    position: relative; // font-size: 0;
+}
 .contair .recommend .recom-list  li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -580,9 +583,7 @@ img {
     
     
     
-    p {
-        position: relative; // font-size: 0;
-    }
+   
 }
 .contair .recommend .recom-list li .icon {
     -webkit-box-flex: 0;
@@ -930,63 +931,69 @@ img {
     background-color: #222;
     
 }
+.song-list-wrapper .song-list .item .icon {
+    -ms-flex: 0 0 60px;
+    flex: 0 0 60px;
+    width: 60px;
+    margin-right: 20px;
+}
+.song-list-wrapper .song-list .item .desc {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 4px;
+    color: hsla(0, 0%, 100%, .3);
+}
+.song-list-wrapper .song-list .item .name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #fff;
+}
+.song-list-wrapper .song-list .item .text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex: 1;
+    flex: 1 1 0%;
+    line-height: 20px;
+    overflow: hidden;
+    font-size: 14px;
+   
+    
+}
+.song-list-wrapper .song-list .item {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
+    font-size: 14px;
+  
+    
+}
+.song-list-wrapper .song-list ul{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+   
+}
+.song-list-wrapper .song-list ul #loading-center-absolute {
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    position: relative;
+    transform: scale(0.5, 0.5);
+}
 .song-list-wrapper .song-list {
     pointer-events: auto;
-    ul {
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-        #loading-center-absolute {
-            display: inline-block;
-            width: 50%;
-            height: 50px;
-            position: relative;
-            transform: scale(0.5, 0.5);
-        }
-    }
-    .item {
-        display: -ms-flexbox;
-        display: flex;
-        width: 100%;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        -ms-flex-align: center;
-        align-items: center;
-        text-align: left;
-        font-size: 14px;
-        .icon {
-            -ms-flex: 0 0 60px;
-            flex: 0 0 60px;
-            width: 60px;
-            margin-right: 20px;
-        }
-        .text {
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -ms-flex: 1;
-            flex: 1 1 0%;
-            line-height: 20px;
-            overflow: hidden;
-            font-size: 14px;
-            .name {
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
-                color: #fff;
-            }
-            .desc {
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
-                margin-top: 4px;
-                color: hsla(0, 0%, 100%, .3);
-            }
-        }
-    }
+   
 }
 .HighqualityDetail .bg-image.active,.rank-list .bg-image.active,.mtv-page .bg-image.active{
     padding-top: 0px;
@@ -997,56 +1004,59 @@ img {
 .bg-image.active .play-wrapper {
     display: none;
 }
-.HighqualityDetail,.rank-list,.mtv-page{
-
-    .bg-image {
-        position: fixed;
-        width: 100%;
-        height: 300px;
-        top: 0;
-        right: 0;
-        animation: enter 0.3s;
-        overflow: hidden;
-        transform-origin: top;
-        background-size: cover;
-        .filter {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(7, 17, 27, .4);
-        }
-        .play-wrapper {
-            position: absolute;
-            bottom: 20px;
-            z-index: 50;
-            width: 100%;
-            .play {
-                box-sizing: border-box;
-                width: 135px;
-                padding: 4px 0;
-                margin: 0 auto;
-                text-align: center;
-                border: 1px solid #ffcd32;
-                color: #ffcd32;
-                border-radius: 100px;
-                font-size: 0;
-                .icon-play {
-                    display: inline-block;
-                    vertical-align: middle;
-                    margin-right: 6px;
-                    font-size: 16px;
-                }
-                .text {
-                    display: inline-block;
-                    vertical-align: middle;
-                    font-size: 12px;
-                }
-            }
-        }
-    }
+.bg-image  .filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 17, 27, .4);
 }
+.bg-image .play-wrapper .play .icon-play {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    font-size: 16px;
+}
+.bg-image .play-wrapper .play .text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.bg-image .play-wrapper .play {
+    box-sizing: border-box;
+    width: 135px;
+    padding: 4px 0;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #ffcd32;
+    color: #ffcd32;
+    border-radius: 100px;
+    font-size: 0;
+   
+    
+}
+.bg-image .play-wrapper {
+    position: absolute;
+    bottom: 20px;
+    z-index: 50;
+    width: 100%;
+   
+}
+.bg-image {
+    position: fixed;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    right: 0;
+    animation: enter 0.3s;
+    overflow: hidden;
+    transform-origin: top;
+    background-size: cover;
+   
+    
+}
+
 .HighqualityDetail {
     position: fixed;
     z-index: 100;
@@ -1083,93 +1093,103 @@ img {
         right: 0;
     }
 }
-
+.player .mini-player .icon img.pause {
+    -webkit-animation: rotate 10s linear infinite;
+    animation: rotate 10s linear infinite;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.player .mini-player .icon img.played {
+    -webkit-animation: rotate 10s linear infinite;
+    animation: rotate 10s linear infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+} 
+.player .mini-player .icon img {
+    border-radius: 50%;
+}
+.player .mini-player .icon {
+    width: 40px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40px;
+    flex: 0 0 40px;
+    margin: 0 10px 0 20px;
+   
+    
+    
+}
+.player .mini-player .control {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30px;
+    flex: 0 0 30px;
+    width: 35px;
+    margin: 0 10px;
+  
+    
+}
+.player .mini-player .control .progress-circle{
+    position: relative;
+}
+.player .mini-player .control .progress-circle .iconfont {
+    font-size: 35px;
+}
+.player .mini-player .control .icon-mini {
+    font-size: 32px;
+}
+.player .mini-player .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    line-height: 20px;
+    overflow: hidden;
+    
+    
+}
+.player .mini-player .text .desc {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, .3);
+}
+.player .mini-player .text .name {
+    margin-bottom: 2px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #fff;
+}
+.player .mini-player {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 180;
+    width: 100%;
+    height: 60px;
+    background: #333;
+   
+    
+    
+}
 .player {
-    .mini-player {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        z-index: 180;
-        width: 100%;
-        height: 60px;
-        background: #333;
-        .icon {
-            width: 40px;
-            -webkit-box-flex: 0;
-            -ms-flex: 0 0 40px;
-            flex: 0 0 40px;
-            margin: 0 10px 0 20px;
-            img.pause {
-                -webkit-animation: rotate 10s linear infinite;
-                animation: rotate 10s linear infinite;
-                -webkit-animation-play-state: paused;
-                animation-play-state: paused;
-            }
-            img.played {
-                -webkit-animation: rotate 10s linear infinite;
-                animation: rotate 10s linear infinite;
-                -webkit-animation-play-state: running;
-                animation-play-state: running;
-            }
-            img {
-                border-radius: 50%;
-            }
-        }
-        .control {
-            -webkit-box-flex: 0;
-            -ms-flex: 0 0 30px;
-            flex: 0 0 30px;
-            width: 35px;
-            margin: 0 10px;
-            .progress-circle {
-                position: relative;
-                .iconfont {
-                    font-size: 35px;
-                }
-            }
-            .icon-mini {
-                font-size: 32px;
-            }
-        }
-        .text {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-box-flex: 1;
-            -ms-flex: 1;
-            flex: 1;
-            line-height: 20px;
-            overflow: hidden;
-            .name {
-                margin-bottom: 2px;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
-                font-size: 14px;
-                color: #fff;
-            }
-            .desc {
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
-                font-size: 12px;
-                color: hsla(0, 0%, 100%, .3);
-            }
-        }
-    }
+   
 }
 
 .player .normal-player {
