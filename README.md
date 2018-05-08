@@ -1,6 +1,7 @@
 ## 前言
 
 <p>这是一个基于react 开发的一个音乐app，灵感来至于 <a href="https://github.com/ustbhuangyi">@ustbhuangyi</a> 黄老师的vue music-app,对此表示感谢。</p>
+<p>谢谢 <a rel="nofollow" href="https://github.com/wandou1989">wandou1989</a>帮我部署app网站服务器！</p>
 <p>感谢 api server 提供者<a href="https://github.com/Binaryify/NeteaseCloudMusicApi/commits?author=Binaryify ">Binaryify</a></p>
 <p>api地址 <a rel="nofollow" href="https://binaryify.github.io/NeteaseCloudMusicApi">https://binaryify.github.io/NeteaseCl…</a></p>
 
